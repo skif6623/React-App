@@ -1,35 +1,8 @@
 import ReactDOM from 'react-dom';
-import paintings from './paintings.json';
-
-// Компонент
-function Painting({ imgUrl, title, authorName, profileUrl, price }) {
-  return (
-    <div>
-      <img src={imgUrl} alt={title} width="480" />
-      <h2>{title}</h2>
-      <p>
-        Автор: <a href={authorName}>{profileUrl}</a>
-      </p>
-      <p>Цена: {price} кредитов</p>
-      <p>Доступность: заканчивается или есть в наличии</p>
-      <button type="button">Добавить в корзину</button>
-    </div>
-  );
-}
-
-const painting = paintings[1];
+import App from './App';
 
 // Рендер компонента
-ReactDOM.render(
-  <Painting
-    imgUrl={painting.url}
-    title={painting.title}
-    authorName={painting.author.tag}
-    profileUrl={painting.author.url}
-    price={painting.price}
-  />,
-  document.querySelector('#root'),
-);
+ReactDOM.render(<App />, document.querySelector('#root'));
 // import React from 'react';
 // import ReactDOM from 'react-dom/client';
 // import './index.css';
