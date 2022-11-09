@@ -1,12 +1,19 @@
 import paintings from './paintings.json';
 import PaintingList from './components/PaintingList';
+import Section from './components/Section';
 export default function App() {
   // const isOnline = true;
 
   // Рендер колекції
   return (
     <div>
-      <PaintingList paintings={paintings} />
+      <Section title={'Топ тижня'}>
+        <PaintingList paintings={paintings} />
+      </Section>
+
+      <Section title={'НАЙКРАЩЕ'}>
+        <PaintingList paintings={paintings} />
+      </Section>
       {/* {paintings.map(({ id, url, title, author, price, quantity }) => (
         <Painting
           key={id}
