@@ -2,6 +2,7 @@ import propTypes from 'prop-types';
 
 // Компонент
 export default function Painting({
+  // Пропси компонента
   imgUrl,
   title,
   authorName = 'не відомо',
@@ -24,9 +25,9 @@ export default function Painting({
 }
 
 Painting.propTypes = {
-  imgUrl: propTypes.string,
-  title: propTypes.string,
-  authorName: propTypes.string,
-  profileUrl: propTypes.string,
-  price: propTypes.number,
+  imgUrl: propTypes.string.isRequired,
+  title: propTypes.string.isRequired,
+  authorName: propTypes.string.isRequired,
+  profileUrl: propTypes.string.isRequired,
+  price: propTypes.number.isRequired,
 };

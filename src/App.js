@@ -1,22 +1,23 @@
-import Painting from './components/Painting';
 import paintings from './paintings.json';
-
+import PaintingList from './components/PaintingList';
 export default function App() {
   // const isOnline = true;
 
   // Рендер колекції
   return (
     <div>
-      {paintings.map(painting => (
+      <PaintingList paintings={paintings} />
+      {/* {paintings.map(({ id, url, title, author, price, quantity }) => (
         <Painting
-          imgUrl={painting.url}
-          title={painting.title}
-          authorName={painting.author.tag}
-          profileUrl={painting.author.url}
-          price={painting.price}
-          quantity={painting.quantity}
+          key={id}
+          imgUrl={url}
+          title={title}
+          authorName={author.tag}
+          profileUrl={author.url}
+          price={price}
+          quantity={quantity}
         />
-      ))}
+      ))} */}
       {/* Рендер по умові */}
       {/* {isOnline && 'Online'}
 
