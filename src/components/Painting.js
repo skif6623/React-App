@@ -1,4 +1,4 @@
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 // Компонент
 export default function Painting({
@@ -25,9 +25,9 @@ export default function Painting({
 }
 
 Painting.propTypes = {
-  imgUrl: propTypes.string.isRequired,
-  title: propTypes.string.isRequired,
-  authorName: propTypes.string.isRequired,
-  profileUrl: propTypes.string.isRequired,
-  price: propTypes.number.isRequired,
+  imgUrl: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  authorName: PropTypes.string.isRequired,
+  profileUrl: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
 };

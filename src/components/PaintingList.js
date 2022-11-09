@@ -1,4 +1,5 @@
 import Painting from './Painting';
+import PropTypes from 'prop-types';
 
 export default function PaintingList({ paintings }) {
   return (
@@ -21,3 +22,11 @@ export default function PaintingList({ paintings }) {
     </ul>
   );
 }
+
+PaintingList.propTypes = {
+  paintings: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    }),
+  ),
+};
