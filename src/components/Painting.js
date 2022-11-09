@@ -1,3 +1,5 @@
+import propTypes from 'prop-types';
+
 // Компонент
 export default function Painting({
   imgUrl,
@@ -19,3 +21,11 @@ export default function Painting({
     </div>
   );
 }
+
+Painting.propTypes = {
+  imgUrl: propTypes.string,
+  title: propTypes.string,
+  authorName: propTypes.string,
+  profileUrl: propTypes.string,
+  price: propTypes.number,
+};
