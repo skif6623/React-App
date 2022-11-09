@@ -7,6 +7,7 @@ export default function Painting({
   authorName = 'не відомо',
   profileUrl,
   price,
+  quantity,
 }) {
   return (
     <div>
@@ -16,7 +17,7 @@ export default function Painting({
         Автор: <a href={profileUrl}>{authorName}</a>
       </p>
       <p>Цена: {price} кредитов</p>
-      <p>Доступность: заканчивается или есть в наличии</p>
+      <p>Доступность: {quantity < 10 ? 'закінчується' : 'є в наявності'}</p>
       <button type="button">Добавить в корзину</button>
     </div>
   );
