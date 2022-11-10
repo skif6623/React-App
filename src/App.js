@@ -1,6 +1,6 @@
-import paintings from './paintings.json';
-import PaintingList from './components/PaintingList';
-import Section from './components/Section';
+import paintings from 'paintings';
+import PaintingList from 'components/PaintingList';
+import Section from 'components/Section';
 export default function App() {
   // const isOnline = true;
 
