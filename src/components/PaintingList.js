@@ -1,4 +1,4 @@
-import Painting from './Painting';
+import Painting from 'components/Painting';
 import PropTypes from 'prop-types';
 
 export default function PaintingList({ paintings }) {
